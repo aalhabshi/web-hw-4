@@ -22,11 +22,11 @@ const results = () =>{
   //grade colletion
     if(percentage >= 90  && percentage >= 100){
       grades = 'A';
-    }else if(percentage >= 80  && percentage <= 89){
+    }else if(percentage >= 80  && percentage <= 89.9){
       grades = 'B';
-   }else if(percentage >= 70  && percentage <= 79){
+   }else if(percentage >= 70  && percentage <= 79.9){
       grades = 'C';
-   }else if(percentage >= 60  && percentage <= 69){
+   }else if(percentage >= 60  && percentage <= 69.9){
       grades = 'D';
    }else if(percentage < 59.9){
     grades = 'F';
@@ -53,9 +53,9 @@ const results = () =>{
     if(physicsNum < 33 || mathsNum < 33 || chemistryNum < 33 || biologyNum < 33){ // else if
       const showBox = document.getElementById('showBox');
       showBox.style.display ='block';
-      document.getElementById('showData').innerHTML =  'You are Fail.';
+      document.getElementById('showData').innerHTML =  'Sadly you failed. :(';
       document.getElementById('getTotal').innerText = 'Out of 400 your total is ' + totalGrades;
-      document.getElementById('getPercentage').innerText = 'You are Fail';
-      document.getElementById('getGrade').innerText = 'You are Fail';
+      document.getElementById('getPercentage').innerText = 'Sadly you failed. :(';
+      document.getElementById('getGrade').innerText = 'You are Fail. :';
     } 
   };
