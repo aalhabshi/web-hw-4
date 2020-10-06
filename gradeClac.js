@@ -9,7 +9,7 @@ const results = () =>{
     const biologyNum = parseFloat(biology)
     let grades = "";
   
-    let totalGrades = physicsNum + mathsNum + chemistryNum + biologyNum;  // total marks
+    let totalGrades = physicsNum + mathsNum + chemistryNum + biologyNum; 
   
   if (physics == 0 || maths == 0 || chemistry == 0 || biology == 0) {
       alert('please Enter Your marks Then click Submit button');
