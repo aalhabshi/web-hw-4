@@ -1,36 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>حاسبة الدرجات 🎓🎓</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1>الحاسبة 🔢</h1>
 
-      <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
-
-      <input id="Quizes" type="text" />
-      <input id="Midterm" type="text" />
-      <input id="FinalTest" type="text" />
-      <input id="Oral" type="text" />
-
-      <input
-        id="submitButton"
-        type="button"
-        value="calculate"
-        onClick="submit()"
-      />
-
-      <p>مجموع درجاتك (بالأرقام) هو</p>
-      <div id="total_grades"></div>
-
-      <p>درجتك النهائية هي (بالأحرف)</p>
-      <div id="final_grade"></div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Student Results</title>
+       <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <div class="animated infinite pulse">
+                  Student <br> Grade <br> Check
+                </div>
+              </div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input type="text" class="app-form-control" placeholder="Arabic" required id="physics">
+                </div>
+                <div class="app-form-group">
+                  <input  type="text"  class="app-form-control"   placeholder="MATHS" required id="maths">
+                </div>
+                 <div class="app-form-group">
+                  <input  type="text"  class="app-form-control"   placeholder="English" required id="chemistry">
+                </div>
+                <div class="app-form-group">
+                  <input  type="text"  class="app-form-control"   placeholder="Science" required id="biology" >
+                </div>
+                <div > 
+                  <input type="button" name="" value="Show Percentage" class="app-form-button" onclick="results()">
+                </div>            
+              </div>
+          </div>
+    
+        </div>
+          <div class="app-form-group showdata">
+                  <p id="showData" > </p>
+         </div>
+      </div>
+                <div class="box" id="showBox">
+                    <h4>Total : <span id="getTotal"></span> </h4>
+                    <h4>Percentage : <span id="getPercentage"></span></h4>
+                    <h4>Grade : <span id="getGrade"></span></h4>
+                </div>
     </div>
-
+    </div>
+    
     <script src="./gradeClac.js"></script>
   </body>
 </html>
+
